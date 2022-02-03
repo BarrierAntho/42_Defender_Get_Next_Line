@@ -6,14 +6,15 @@
 /*   By: antho <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/13 21:35:31 by antho             #+#    #+#             */
-/*   Updated: 2022/02/03 14:48:01 by abarrier         ###   ########.fr       */
+/*   Updated: 2022/02/03 16:35:11 by abarrier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line/get_next_line.h"
+#include "gnl/get_next_line.h"
 #include <unistd.h>
 #include <fcntl.h>
 #include <string.h>
+#include <stdio.h>
 
 #define SEP_S "###################"
 

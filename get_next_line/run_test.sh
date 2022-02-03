@@ -44,11 +44,11 @@ DIFF_N="diff.log"
 IS_BNS=0
 
 #CFLAGS="-Wall -Werror -Wextra -Wconversion"
-#CFLAGS="-Werror -Wall -Wextra -g3 -fsanitize=address"
-CFLAGS="-Werror -Wall -Wextra -Wconversion -g3 -fsanitize=address"
-SRCS=$(find get_next_line -type f \( -iname "*.c" ! -iname "*bonus.c" \))
-SRCSBNS=$(find get_next_line -type f \( -iname "*bonus.c" \))
-INCLUDES=get_next_line
+CFLAGS="-Werror -Wall -Wextra -g3 -fsanitize=address"
+#CFLAGS="-Werror -Wall -Wextra -Wconversion -g3 -fsanitize=address"
+SRCS=$(find gnl -type f \( -iname "*.c" ! -iname "*bonus.c" \))
+SRCSBNS=$(find gnl -type f \( -iname "*bonus.c" \))
+INCLUDES=gnl
 #cc ${CFLAGS} -D BUFFER_SIZE=${BUFS} main.c ${SRCS} ${INCLUDES}/get_next_line.h
 #cc ${CFLAGS} -D BUFFER_SIZE=${BUFS} main.c ${SRCS} ${INCLUDES}/get_next_line_bonus.h
 
