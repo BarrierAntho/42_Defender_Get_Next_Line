@@ -14,11 +14,14 @@
 ## Content
 - [File descriptor](#file-descriptor)
 - [Check part](#check-part-mag)
-- [How use the tester](#how-use-the-tester-checkered-flag)
+- [How use the tester](#how-use-the-tester-checkered_flag)
 
 ---
 
 ## File descriptor
+
+[Content](#content)
+
 |int|name|constant(unistd.h)|flux|
 |:---|:---|:---|:---|
 |0|standard input|STDIN\_FILENO|stdin|
@@ -26,9 +29,10 @@
 |2|standard error|STDERRi\_FILENO|stderr|
 |x >= 3|other fd|||
 
-:warning: *_Make sure to not have any issue with BUFFER_SIZE = 2147483647. Because there is a memory issue if malloc(char) * (BUFFER_SIZE + 1)._* 
-
 ## Check part :mag:
+
+[Content](#content)
+
 - Check protection after a malloc. Make sure return 0 will stop the program without crash and leaks.
 - Check "BUFFER\_SIZE" when its value is equal/less than 0 or equal/more than INT\_MAX
 - For bonus, protect the max number of file descriptor to avoid any crash of the program. You can change the limit of opened fd to test your program.
@@ -40,6 +44,8 @@
 ---
 
 ## How use the tester :checkered\_flag:
+
+[Content](#content)
 
 1. Clone repository `git clone https://github.com/BarrierAntho/42_Defender_Get_Next_Line` in your "gext\_next\_line" working directory.
 2. Go to the directory "42\_Defender\_Get\_Next\_Line"
