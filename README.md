@@ -50,15 +50,14 @@
 
 1. Clone repository `git clone https://github.com/BarrierAntho/42_Defender_Get_Next_Line` in your "gext\_next\_line" working directory.
 2. Go to the directory "42\_Defender\_Get\_Next\_Line"
+3. Run `make` to execute tester Makefile rule to create a test directory "gnl" in tester directory and copy your working files into this new "gnl" directory. It will build an executable program "gnl.out"
 4. Run `make norme` and `make check` to check "norminette" and "forbidden files/functions"
-5. Run `make` to build an executable program "gnl.out"
-6. Manual check test
-	1. Run `make` to execute tester Makefile rule to create a test directory "gnl" in testerdirectory and copy your working files into this new "gnl" directory
-	2. Run `make test` or `make test b=xx` where **x represents BUFFERSIZE**. Then it will build an executable program "gnl.out" and execute it by using the file "gnl\_000.txt"
-	3. You can also run the program as following `./gnl.out filename` 
-7. Automatic check test
-	4. Run `make run` that will compile and use the get\_next\_line workfiles and test it with files from "test/file".
-	5. Check content of "test/result" directory. :bangbang: *_never delete test/result directory_*
+5. Manual check test
+	1. Run `make test` or `make test b=xx` where **x represents BUFFERSIZE**. Then it will build an executable program "gnl.out" and execute it by using the file "gnl\_000.txt"
+	2. You can also run the program as following `./gnl.out filename` 
+6. Automatic check test
+	1. Run `make run` that will compile and use the get\_next\_line workfiles and test it with files from "test/file".
+	2. Check content of "test/result" directory. :bangbang: *_never delete test/result directory_*
 		- The program will generate a file result according to one original file + a BUFFERSIZE.
 		- The program will generate a "diff.log" file where comparison is written and described in it"
 > You can edit the existing file or create as much as you want in the directory "test/file". The program will be able to use it during "run" process
