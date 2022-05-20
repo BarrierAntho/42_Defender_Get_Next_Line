@@ -50,7 +50,7 @@
 
 1. Clone repository `git clone https://github.com/BarrierAntho/42_Defender_Get_Next_Line` in your "gext\_next\_line" working directory.
 2. Go to the directory "42\_Defender\_Get\_Next\_Line"
-3. Run `make` to execute tester Makefile rule to create a test directory "gnl" in tester directory and copy your working files into this new "gnl" directory. It will build an executable program "gnl.out"
+3. Run `make` to execute tester Makefile rule to create a test directory "gnl" in tester directory. It will also copy your working files into this new "gnl" directory and build an executable program "gnl.out"
 4. Run `make norme` and `make check` to check "norminette" and "forbidden files/functions"
 5. Manual check test
 	1. Run `make test` or `make test b=xx` where **x represents BUFFERSIZE**. Then it will build an executable program "gnl.out" and execute it by using the file "gnl\_000.txt"
