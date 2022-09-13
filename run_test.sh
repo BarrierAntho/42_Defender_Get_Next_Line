@@ -21,8 +21,9 @@ DIFF_N="diff.log"
 DIFF_N_TMP="diff_tmp.log"
 
 CC=gcc
-CFLAGS="-Werror -Wall -Wextra -g3 -fsanitize=address"
+#CFLAGS="-Werror -Wall -Wextra -g3 -fsanitize=address"
 #CFLAGS="-Werror -Wall -Wextra -Wconversion -g3 -fsanitize=address"
+CFLAGS="-Werror -Wall -Wextra -Wconversion -g3"
 SRCS=$(find gnl -type f \( -iname "*.c" ! -iname "*bonus.c" \))
 INCLUDES=gnl
 PROG_N=a.out

@@ -18,8 +18,8 @@ OBJS		=	${SRCS:.c=.o}
 
 INCLUDES	=	${DIR_S}
 CC		=	gcc
-#CFLAGS		=	-Werror -Wall -Wextra 
-CFLAGS		=	-Werror -Wall -Wextra -g3 -fsanitize=address
+CFLAGS		=	-Werror -Wall -Wextra 
+#CFLAGS		=	-Werror -Wall -Wextra -g3 -fsanitize=address
 #CFLAGS		=	-Werror -Wall -Wextra -Wconversion -g3 -fsanitize=address
 
 COMPILE		=	${CC} ${CFLAGS} -o ${NAME} -I ${INCLUDES}
@@ -30,8 +30,8 @@ NAME	=	gnl.out
 
 copy:
 			mkdir -p ${DIR_S}
-			cp ../*.c ${DIR_S}
-			cp ../*.h ${DIR_S}
+			cp ../get_next_line*.c ${DIR_S}
+			cp ../get_next_line*.h ${DIR_S}
 			make all
 
 all:		${NAME}
